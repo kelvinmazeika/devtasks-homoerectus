@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTasks - Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">DevTasks</h1>
+
+            <nav class="nav">
+                <a href="../Home/index.html">Home</a>
+                <a href="index.html" class="active">Tarefas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="tasks">
+            <div class="container">
+
+                <h2>Tarefas</h2>
+
+                <div class="task-form">
+                    <label for="task">Nova tarefa:</label>
+
+                    <input
+                        type="text"
+                        id="task"
+                        name="task"
+                        placeholder="Digite a descrição da tarefa"
+                    >
+
+                    <button type="button" class="button primary">
+                        Adicionar tarefa
+                    </button>
+                </div>
+
+                <div class="task-list">
+
+                    <h3>Minhas tarefas:</h3>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Estudar Git</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Fazer exercício</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="task3">
+                            <label for="task3">Revisar Pull Request</label>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2026 DevTasks. Projeto desenvolvido pela dupla Homoerectus.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
