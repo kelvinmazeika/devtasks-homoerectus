@@ -1,136 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevTasks · Usuários</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTasks - Usuários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="page">
+    <header class="header">
+        <div class="container header-content">
 
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark">DT</span>
-        <span class="brand-name">DevTasks</span>
-      </div>
-      <nav class="topnav">
-        <a href="../Home/index.html" class="topnav-link">Home</a>
-        <a href="../Tarefas/index.html" class="topnav-link">Tarefas</a>
-        <a href="index.html" class="topnav-link topnav-link--active">Usuários</a>
-      </nav>
+            <h1 class="logo">DevTasks</h1>
+
+            <nav class="nav">
+                <a href="../Home/index.html">Home</a>
+                <a href="../Tarefas/index.html">Tarefas</a>
+                <a href="index.html" class="active">Usuários</a>
+            </nav>
+
+        </div>
     </header>
 
-    <main class="content">
+    <main>
 
-      <section class="intro">
-        <p class="eyebrow">Equipe · 03 pessoas</p>
-        <h1>Usuários</h1>
-        <p class="subtitle">Cadastre quem tem acesso ao DevTasks e acompanhe quem já faz parte da equipe.</p>
-      </section>
+        <section class="users">
+            <div class="container">
 
-      <section class="panel form-panel" aria-labelledby="form-title">
-        <h2 id="form-title" class="panel-title">Adicionar usuário</h2>
+                <h2>Usuários</h2>
 
-        <form class="user-form" id="userForm">
-          <div class="field">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Ex: Marina Costa" required />
-          </div>
+                <div class="user-form">
 
-          <div class="field">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Ex: marina@devtasks.com" required />
-          </div>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
 
-          <button type="submit" class="btn-primary">
-            Adicionar usuário
-          </button>
-        </form>
-      </section>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Digite o nome do usuário"
+                        >
+                    </div>
 
-      <section class="panel list-panel" aria-labelledby="list-title">
-        <div class="list-header">
-          <h2 id="list-title" class="panel-title">Usuários cadastrados</h2>
-          <span class="list-count" id="userCount">3</span>
-        </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
 
-        <ul class="user-list" id="userList">
-          <li class="user-row">
-            <span class="avatar" style="--avatar-color:#4C5FD5">A</span>
-            <span class="user-info">
-              <span class="user-name">Ana</span>
-              <span class="user-email">ana@email.com</span>
-            </span>
-            <span class="user-tag">Membro</span>
-          </li>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite o e-mail do usuário"
+                        >
+                    </div>
 
-          <li class="user-row">
-            <span class="avatar" style="--avatar-color:#0E7C7B">C</span>
-            <span class="user-info">
-              <span class="user-name">Carlos</span>
-              <span class="user-email">carlos@email.com</span>
-            </span>
-            <span class="user-tag">Membro</span>
-          </li>
+                    <button type="button" class="button primary">
+                        Adicionar usuário
+                    </button>
 
-          <li class="user-row">
-            <span class="avatar" style="--avatar-color:#C2571F">M</span>
-            <span class="user-info">
-              <span class="user-name">Marina</span>
-              <span class="user-email">marina@email.com</span>
-            </span>
-            <span class="user-tag">Membro</span>
-          </li>
-        </ul>
-      </section>
+                </div>
+
+                <div class="user-list">
+
+                    <h3>Usuários cadastrados:</h3>
+
+                    <div class="user-card">
+                        <div class="user-avatar">A</div>
+
+                        <div class="user-info">
+                            <strong>Ana</strong>
+                            <span>ana@email.com</span>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <div class="user-avatar">C</div>
+
+                        <div class="user-info">
+                            <strong>Carlos</strong>
+                            <span>carlos@email.com</span>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <div class="user-avatar">M</div>
+
+                        <div class="user-info">
+                            <strong>Marina</strong>
+                            <span>marina@email.com</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
-    <footer class="page-footer">
-      <p>DevTasks · tela de Usuários</p>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2026 DevTasks. Projeto desenvolvido para fins educacionais.
+            </p>
+        </div>
     </footer>
 
-  </div>
-
-  <script>
-    // Pequeno script para dar funcionalidade real ao formulário
-    // (não é obrigatório para o exercício, só deixa a tela interativa)
-    const form = document.getElementById('userForm');
-    const list = document.getElementById('userList');
-    const count = document.getElementById('userCount');
-    const palette = ['#4C5FD5', '#0E7C7B', '#C2571F', '#8B5CF6', '#D5477B'];
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const nome = document.getElementById('nome').value.trim();
-      const email = document.getElementById('email').value.trim();
-      if (!nome || !email) return;
-
-      const inicial = nome.charAt(0).toUpperCase();
-      const cor = palette[Math.floor(Math.random() * palette.length)];
-
-      const li = document.createElement('li');
-      li.className = 'user-row user-row--new';
-      li.innerHTML = `
-        <span class="avatar" style="--avatar-color:${cor}">${inicial}</span>
-        <span class="user-info">
-          <span class="user-name">${nome}</span>
-          <span class="user-email">${email}</span>
-        </span>
-        <span class="user-tag">Membro</span>
-      `;
-
-      list.appendChild(li);
-      count.textContent = list.children.length;
-      form.reset();
-      document.getElementById('nome').focus();
-    });
-  </script>
-
 </body>
+
 </html>
